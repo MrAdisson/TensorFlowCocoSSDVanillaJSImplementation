@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ALLOW CAMERA USAGE -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- ALLOW CAMERA USAGE -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Hello AI !</h1>
+    <button id="webcamButton" disabled>Model loading...</button>
+    <div id="liveView" class="camView">
+      <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    </div>
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
