@@ -18,12 +18,13 @@
 <body>
   <div id="app">
     <h1>Hello AI !</h1>
-    <button id="webcamButton" disabled>Model loading...</button>
-    <div id="liveView" class="camView">
-      <video id="webcam" autoplay playsinline width="640" height="480"></video>
-    </div>
-    <canvas id="canvas" width="640" height="480"></canvas>
-
+    <section id="demos" class="invisible">
+      <p>Wait for the model to load, then enable the webcam and show objects to the camera.</p>
+      <button id="webcamButton">Model loading...</button>
+      <div id="liveView" class="camView">
+        <video id="webcam" autoplay muted width="640" height="480"></video>
+      </div>
+    </section>
   </div>
   <script type="module" src="/main.js"></script>
 </body>
